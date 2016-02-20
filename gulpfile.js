@@ -126,7 +126,9 @@ gulp.task('watch', function () {
 gulp.task('vendors:css', function () {
     return gulp.src([
             './bower_components/angular-loading-bar/build/loading-bar.min.css',
-            './bower_components/bootstrap/dist/css/bootstrap.min.css'
+            './bower_components/bootstrap/dist/css/bootstrap.min.css',
+            './bower_components/angular-material/angular-material.min.css',
+            './bower_components/angular-material/angular-material.layouts.min.css'
         ])
         .pipe(concat('vendors.css'))
         .pipe(minifyCss())
@@ -145,6 +147,8 @@ gulp.task('vendors:js', function () {
             './bower_components/angular-dynamic-locale/dist/tmhDynamicLocale.min.js',
             './bower_components/i18next/i18next.min.js',
             './bower_components/ng-i18next/dist/ng-i18next.min.js',
+            './bower_components/angular-aria/angular-aria.min.js',
+            './bower_components/angular-material/angular-material.min.js',
 
             './lib/ui-bootstrap/ui-bootstrap-custom-tpls-0.14.3.min.js'
         ])

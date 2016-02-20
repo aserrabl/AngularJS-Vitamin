@@ -1,4 +1,5 @@
 'use strict';
+
 var apiBase = 'http://localhost:3000/';
 var apiPath = {
     login: 'user/login',

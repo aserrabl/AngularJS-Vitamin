@@ -13,6 +13,7 @@
             'ngSanitize',
             'jm.i18next',
             'tmh.dynamicLocale',
+            'ngMaterial',
 
             /*
              Then all our app modules
